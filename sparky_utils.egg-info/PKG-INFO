@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: sparky-utils
+Version: 1.0.0
+Summary: Python and Django Project Utils Package
+Home-page: https://github.com/Ayobami6/sparky_utils
+Author: Ayobami Alaran
+Author-email: ayobamidele006@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Sparky Utils
+
+### Utility Package for Python and Django Projects
+
+Reduce your code repetition using fine grained utility package for python and Django projects
+
+
+#### Installation
+```bash
+pip install sparky_utils
+```
+
+
+
+
