@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="sparky_utils",
-    version="1.0.0",
+    version="1.0.1",
     author="Ayobami Alaran",
     author_email="ayobamidele006@gmail.com",
     description="Python and Django Project Utils Package",
