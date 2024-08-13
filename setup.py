@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="sparky_utils",
-    version="1.0.3",
+    version="1.0.4",
     author="Ayobami Alaran",
     author_email="ayobamidele006@gmail.com",
     description="Python and Django Project Utils Package",
@@ -18,6 +18,7 @@ setup(
     python_requires=">=3.6",
     install_requires=[
         "asgiref==3.8.1",
-        "Django==4.2.13",
+        "Django>=4.2.13",
+        "djangorestframework>=3.15.1",
     ],
 )
