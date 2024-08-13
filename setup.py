@@ -19,6 +19,5 @@ setup(
     install_requires=[
         "asgiref==3.8.1",
         "Django==4.2.13",
-        "djangorestframework==3.15.1",
     ],
 )
