@@ -13,3 +13,4 @@ sparky_utils.egg-info/SOURCES.txt
 sparky_utils.egg-info/dependency_links.txt
 sparky_utils.egg-info/requires.txt
 sparky_utils.egg-info/top_level.txt
+sparky_utils/logger/__init__.py

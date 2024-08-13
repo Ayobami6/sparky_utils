@@ -1,6 +1,14 @@
 import pytest
+import sys
+import os
 from rest_framework.response import Response
-from sparky_utils.response import service_response  # Replace with the actual module name
+from sparky_utils.response import service_response
+from django.conf import settings
+
+settings.configure()
+
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 
 def test_service_response_with_empty_data():
