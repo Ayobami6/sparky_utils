@@ -8,7 +8,7 @@ description: >-
 # Decorators
 
 ```python
-from sparky_utils.decoratore import str_meta
+from sparky_utils.decorators import str_meta
 
 
 """

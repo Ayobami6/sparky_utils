@@ -23,7 +23,7 @@ print(sparky_utils.list_modules())
 ## Use Decorator
 
 ```python
-from sparky_utils import str_meta
+from sparky_utils.decorators import str_meta
 
 
 """
