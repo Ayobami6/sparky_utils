@@ -12,4 +12,4 @@
 
 ## Contributing
 
-* [First Step](contributing/first-step.md)
+* [🫂 First Step](contributing/first-step.md)

@@ -9,6 +9,8 @@ description: >-
 
 {% code title="views.py" %}
 ```python
+from sparky_utils.exceptions import handle_internal_server_exception
+
 def get(self, request, *args, **kwargs) -> Any:
         try:
             # get all advert banners

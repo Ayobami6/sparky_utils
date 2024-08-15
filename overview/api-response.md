@@ -7,7 +7,7 @@ description: Use service response to have consistent API response for all your R
 {% code title="views.py" fullWidth="true" %}
 ````python
 ```python
-from sparky_utils import service_response
+from sparky_utils.response import service_response
 
 def retrieve(self, request, *args, **kwargs):
         """Product retrieve get handler"""
