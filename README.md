@@ -1,9 +1,29 @@
----
-description: >-
-  Reduce your code repetition using fine grained utility package for python and
-  Django projects
----
+```txt
 
-# 🏗️ Introduction
+ ________  ________  ________  ________  ___  __        ___    ___      ___  ___  _________  ___  ___       ________      
+|\   ____\|\   __  \|\   __  \|\   __  \|\  \|\  \     |\  \  /  /|    |\  \|\  \|\___   ___\\  \|\  \     |\   ____\     
+\ \  \___|\ \  \|\  \ \  \|\  \ \  \|\  \ \  \/  /|_   \ \  \/  / /    \ \  \\\  \|___ \  \_\ \  \ \  \    \ \  \___|_    
+ \ \_____  \ \   ____\ \   __  \ \   _  _\ \   ___  \   \ \    / /      \ \  \\\  \   \ \  \ \ \  \ \  \    \ \_____  \   
+  \|____|\  \ \  \___|\ \  \ \  \ \  \\  \\ \  \\ \  \   \/  /  /        \ \  \\\  \   \ \  \ \ \  \ \  \____\|____|\  \  
+    ____\_\  \ \__\    \ \__\ \__\ \__\\ _\\ \__\\ \__\__/  / /           \ \_______\   \ \__\ \ \__\ \_______\____\_\  \ 
+   |\_________\|__|     \|__|\|__|\|__|\|__|\|__| \|__|\___/ /             \|_______|    \|__|  \|__|\|_______|\_________\
+   \|_________|                                       \|___|/                                                 \|_________|
+                                                                                                                          
+                                                                                                                          Sparky Inc.
+```     
 
-Python and Django utils package for efficient and productive development with python and django web development
+# Table of contents
+
+* [🏗️ Introduction](README.md)
+
+## ❕ Overview
+
+* [🏁 First Step](overview/first-step.md)
+* [Decorators](overview/decorators.md)
+* [🔬 API Response](overview/api-response.md)
+* [Exceptions](overview/exceptions.md)
+* [Logger](overview/logger.md)
+
+## Contributing
+
+* [🫂 First Step](contributing/first-step.md)
