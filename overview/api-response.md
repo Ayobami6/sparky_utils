@@ -5,8 +5,8 @@ description: Use service response to have consistent API response for all your R
 # 🔬 API Response
 
 {% code title="views.py" fullWidth="true" %}
-````python
 ```python
+
 from sparky_utils.response import service_response
 
 def retrieve(self, request, *args, **kwargs):
@@ -29,7 +29,6 @@ def retrieve(self, request, *args, **kwargs):
         except Exception:
             return handle_internal_server_exception()
 ```
-````
 {% endcode %}
 
 
