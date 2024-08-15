@@ -18,4 +18,12 @@ Visit the [<mark style="color:red;">source code</mark>](https://github.com/Ayoba
 
 ## What to contribute?
 
-* Found a bug?&#x20;
+* Found a bug? - Open a fix PR or an Issue
+* Optimize a tool - Open a Pull Request
+* Add a tool - Open PR with the description
+
+
+
+Join Our Community
+
+[Discord](https://discord.gg/wtGYB9rr)
