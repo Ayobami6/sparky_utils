@@ -12,7 +12,7 @@ class LoggerConfig:
     log_date_format: str = "%Y-%m-%d %H:%M:%S"
     base_dir: str = Path(__file__).resolve().parent.parent
 
-    def __post__init(self):
+    def __post_init__(self):
         self.__configure_logger()
 
     def __configure_logger(self):
