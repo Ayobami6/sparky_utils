@@ -3,6 +3,7 @@ import logging.config
 from pathlib import Path
 from dataclasses import dataclass
 from django.utils.log import DEFAULT_LOGGING
+import traceback
 
 
 @dataclass
@@ -10,7 +11,7 @@ class LoggerConfig:
     log_level: str = logging.INFO
     log_format: str = "%(asctime)s [%(levelname)s] %(name)s - %(message)s"
     log_date_format: str = "%Y-%m-%d %H:%M:%S"
-    base_dir: str = Path(__file__).resolve().parent.parent
+    base_dir: str = Path.cwd()
 
     def __post_init__(self):
         self.__configure_logger()
@@ -62,5 +63,11 @@ class LoggerConfig:
                 }
             )
 
-        except Exception as e:
-            print(f"Failed to load logging configuration: {e}")
+        except ValueError:
+            print(f"Log directory '{self.base_dir / 'logs'}' not found.")
+            print("Creating directory...")
+            (self.base_dir / "logs").mkdir(parents=True, exist_ok=True)
+            self.__configure_logger()
+
+        except Exception:
+            print(f"Failed to load logging configuration: {traceback.format_exc()}")
