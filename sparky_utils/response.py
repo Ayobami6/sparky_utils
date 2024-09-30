@@ -16,5 +16,5 @@ def service_response(
         Response: Http response
     """
     return Response(
-        {"status": status, "message": message, "data": data}, status=status_code
+        {"status": status, "message": message, "data": data, "status_code": status_code}, status=status_code
     )
