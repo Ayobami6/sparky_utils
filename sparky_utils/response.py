@@ -15,6 +15,18 @@ def service_response(
     Returns:
         Response: Http response
     """
-    return Response(
-        {"status": status, "message": message, "data": data, "status_code": status_code}, status=status_code
-    )
+    data_resp = {
+        "status": status,
+        "status_code": status_code,
+    }
+    match status:
+        case "success":
+            data_resp["data"] = data
+            data_resp["message"] = message
+        case "error":
+            data_resp["message"] = message
+        case _:
+            data_resp["message"] = message
+    if status_code == 204:
+        return Response(status=status_code)
+    return Response(data=data_resp, status=status_code)
