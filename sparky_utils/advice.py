@@ -47,10 +47,10 @@ def exception_advice(model_object: models.Model = None) -> any:
             except DRFValidationError as e:
                 if "object does not exist" in str(e.detail):
                     return service_response(
-                        success=False, message="Resource not found", status_code=404
+                        status="error", message="Resource not found", status_code=404
                     )
                 return service_response(
-                    success=False, message=e.detail, status_code=400
+                    status="error", message=e.detail, status_code=400
                 )
             except ObjectDoesNotExist as e:
                 return service_response(status="error", message=str(e), status_code=404)
