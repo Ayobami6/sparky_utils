@@ -33,7 +33,7 @@ class SingletonMeta(type):
 class InternalServerExceptionHandler(metaclass=SingletonMeta):
 
     def __init__(self, model_object):
-        if not isinstance(model_object, models.Model):
+        if not issubclass(model_object, models.Model):
             raise ValueError("model_object should be an instance of Django model")
         self.model_object = model_object
 
